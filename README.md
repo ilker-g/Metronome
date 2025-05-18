@@ -1,6 +1,6 @@
 # Metronome
 
-Metronome is a simple and user-friendly web application designed to help musicians keep time by providing adjustable tempo (BPM) and rhythm tracking.
+A small project I developed to make the guitar learning process more fun and engaging.
 
 ## Features
 
