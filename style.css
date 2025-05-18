@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7f7f7;
+  /* font-family: "helvetica neue", sans-serif; */
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  background-image: url(guitar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: clamp(14px, 1.2vw, 18px);
+  background: #333;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+ul {
+  margin: 20px 20px;
+  list-style: none;
+}
+
+li::before {
+  margin-right: 5px;
+}
+
+.container {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1s forwards;
+  animation-delay: 0.5s;
+}
+.easy-bpms li::before {
+  content: "🟢";
+}
+
+.mid-bpms li::before {
+  content: "🔵";
+}
+
+.hard-bpms li::before {
+  content: "🔴";
+}
+.hero {
+  text-align: center;
+  font-size: clamp(18px, 1.5vw, 30px);
+}
+
+.values {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.values span{
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+}
+
+.range {
+  accent-color: red;
+  width: 200px;
+}
+
+.btn {
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: clamp(12px, 1.5vw, 18px);
+  font-weight: 700;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff4742;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
+
+.btn-block {
+  margin-top: 20px;
+  background:#a6893a ;
+  border: 3px solid #a6893a;
+
+}
+
+.btn-block:hover,
+.btn-block:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #a6893a;
+}
+
+.level-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.bpm-info {
+  display: flex; 
+  gap: 20px;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border: 3px solid #ff4742;
+  border-radius: 6px;
+  padding: clamp(10px, 2vw, 12px);
+  width: clamp(100px, 20%, max-content);
+  height: clamp(max-content, 20%, 1000px);
+  font-size: clamp(16px, 1.2vw, 20px);
+  text-wrap: inherit;
+  overflow-wrap: break-word;
+  margin-left: 2rem;
+}
+
+.hide{
+  display: none;
+}
+/* .gradient1 {
+  background: linear-gradient(to right, rgb(187, 247, 208), rgb(34, 197, 94));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient2 {
+  background: linear-gradient(
+    to right,
+    rgb(219, 234, 254),
+    rgb(147, 197, 253),
+    rgb(59, 130, 246)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient3 {
+  background: linear-gradient(to right, rgb(254, 202, 202), rgb(220, 38, 38));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */

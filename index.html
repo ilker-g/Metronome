@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Step By Step 🎸</title>
+</head>
+
+<body>
+<div>
+
+  <div class="hero">
+    <h1>keep rolling </h1>
+    <div>
+      <div class="values">
+        <p>BPM: <span id="bpm">50</span></p>
+        <p>Level:<span class="level">Easy 🎉</span></p>
+      </div>
+      
+      <button class="btn prev-btn">Previous Level</button>
+      <label for="metronome">Metronome:</label>
+      <input id="metronome" type="range" min="40" max="218" value="50" class="range">
+      <button class="btn next-btn">Next Level🔥</button>
+    </div>
+    <div>
+      
+      <button class="btn start-btn">Start</button>
+      
+      <select id="audios">
+        <option value="null" disabled selected>Choose metronome sound ( Apologies for the bad naming 😑 )</option>
+        <option name="click" value="audio/250552__druminfected__metronome.wav">Click</option>
+        <option name="drumsticks" value="audio/319910__theriavirra__drumsticks-lutner-rock-n-hickory-no5.wav">Drumsticks
+        </option>
+        <option name="bla" value="audio/548518__ludwigmueller__perc_metronomequartz_hi.wav">Electric Metronome</option>
+        <option name="blew" value="audio/793346__sadiquecat__metronome-click.wav">Thud</option>
+      </select>
+    </div>
+    <button class="btn btn-block">Show bpm info</button>
+  </div>
+  
+  
+  <div class="bpm-info hide">
+    <div>
+      <h3 class="gradient1">Slow Tempo(For beginners)</h3>
+      <ul class="easy-bpms">
+        <li>50 bpm</li>
+        <li>60 bpm</li>
+        <li>70 bpm</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3 class="gradient2">Mid Tempo(Intermediate)</h3>
+      <ul class="mid-bpms">
+        <li>90 bpm</li>
+        <li>100 bpm</li>
+        <li>110 bpm</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3 class="gradient3">Fast Tempo(Advanced)</h3>
+      <ul class="hard-bpms">
+        <li>140 bpm</li>
+        <li>160 bpm</li>
+        <li>180 bpm</li>
+        <li>200 bpm</li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+  <audio id="drumsticks" src="audio/250552__druminfected__metronome.wav"></audio>
+  <audio id="click" src="audio/319910__theriavirra__drumsticks-lutner-rock-n-hickory-no5.wav"></audio>
+  <audio id="bla" src="audio/548518__ludwigmueller__perc_metronomequartz_hi.wav"></audio>
+  <audio id="blew" src="audio/793346__sadiquecat__metronome-click.wav"></audio>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
