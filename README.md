@@ -7,7 +7,6 @@ A small project I developed to make the guitar learning process more fun and eng
 - Adjustable tempo (Beats Per Minute)
 - Start, stop, and tempo change controls
 - Visual tempo indicator
-- Lightweight and fast performance
 
 ## Installation
 
@@ -29,6 +28,3 @@ Open the index.html file in your web browser or run it on a local web server. Ad
 - JavaScript
 
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
